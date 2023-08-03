@@ -1,8 +1,8 @@
 import type { GetStaticProps } from "next";
-import Main, { ExpressionProps } from "../components/main";
-import { validateExpression } from "../utils";
+import Main, { ExpressionProps } from "../../components/main";
+import { validateExpression } from "../../utils";
 
-const Home = Main;
+const ExpressionHome = Main;
 
 export const getStaticProps: GetStaticProps<ExpressionProps> = () => {
   const expression = "* * * * *";
@@ -12,4 +12,4 @@ export const getStaticProps: GetStaticProps<ExpressionProps> = () => {
   };
 };
 
-export default Home;
+export default ExpressionHome;
